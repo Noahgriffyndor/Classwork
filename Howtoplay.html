@@ -43,6 +43,24 @@ p { color:RGB(206,209,200)}
 
 /* setting the height of certian photos */
 .hght {height: 300px; width: auto} 
+	
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+	
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
 
 /* Style for the navigation bar */
 .topnav {
@@ -169,6 +187,6 @@ After the first turn both players draw until they both have 4 cards in their han
 <!-- I have created an iframe to youtube to include a video within this page-->
 <h3>How to play video</h3>
 <h3><iframe width="747" height="420" src="https://www.youtube.com/embed/416k-Rs8hgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h3>
-
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/416k-Rs8hgQ' frameborder='0' allowfullscreen></iframe></div>
 </body>
 </html>
