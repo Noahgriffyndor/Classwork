@@ -42,7 +42,7 @@ h3 { text-align: center;
 p { color:RGB(206,209,200)}
 
 /* setting the height of certian photos */
-.hght {height: 300px; width: auto} 
+.hght {height: 400px; width: auto} 
 	
 .embed-container { 
 	position: relative; 
@@ -64,8 +64,9 @@ p { color:RGB(206,209,200)}
 
 /* Style for the navigation bar */
 .topnav {
-  margin-left: -10%;
-  margin-right: -10%;
+  margin-left: -15%;
+  margin-right: -15%;
+  position: relative;
   background-color: #491122;
   overflow: hidden;
 }
@@ -75,7 +76,7 @@ p { color:RGB(206,209,200)}
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 40px;
+  padding: 10px 5%;
   text-decoration: none;
   font-size: 17px;
 }
@@ -91,6 +92,29 @@ p { color:RGB(206,209,200)}
   background-color: #820909;
   color: white;
 }
+
+.topnav-centered a {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	}
+.topnav-right {
+	float: right:
+}
+@media screen and (max-width 600px) {
+	.topnav a, .topnav-right {
+		float: none;
+		display: block;
+	}
+	.topnav-centered a {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+	}
+}
 </style>
 
 </head>
@@ -100,6 +124,8 @@ p { color:RGB(206,209,200)}
 <!--  <a href="index.html">Home</a> removing home link for now until I have an index page built-->
   <a class="active"  href="Howtoplay.html">Learn to Play</a>
   <a href="Videohub.html">Video Hub</a>
+  <a href="Links.html">Links</a>
+  <a href="Links.html">Links</a>
   <a href="Links.html">Links</a>
 </div>
 <body>
@@ -112,13 +138,14 @@ At the bottom there is a YouTube video that will also teach you how to play and 
 
 <!-- The mat layout picture takes up majority of the screen so I made the photo variable sizes to support mobile phones -->
 <h2>Mat Layout</h2>
-<p>  
-  <picture>  
+
+  <h3><picture>  
 	  <source media="(min-width: 480px)"           srcset="Pictures/Mat1200.jpg 1200w, Pictures/Mat800.jpg 800w"          sizes="80vw">
   <img src="Pictures/Mat400.jpg">
 	</picture>
+</h3>
 	<br>
-This is a typical play mat that is used during the game.  Play mats aren't necessary for the game, but knowing where to place your cards is required.  I will describe each field on the play mat and how they are used to play the game.
+<p>  This is a typical play mat that is used during the game.  Play mats aren't necessary for the game, but knowing where to place your cards is required.  I will describe each field on the play mat and how they are used to play the game.
 </p>
 
 <!-- For the photo I am using class hght to set the sizes for the photo, no need for variable sizes because it is under 300px-->
@@ -186,7 +213,6 @@ After the first turn both players draw until they both have 4 cards in their han
 	</h3>  <br>
 <!-- I have created an iframe to youtube to include a video within this page-->
 <h3>How to play video</h3>
-<h3><iframe width="747" height="420" src="https://www.youtube.com/embed/416k-Rs8hgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h3>
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/416k-Rs8hgQ' frameborder='0' allowfullscreen></iframe></div>
 </body>
 </html>
