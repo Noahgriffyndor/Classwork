@@ -1,49 +1,76 @@
 <!doctype html>
+<head>
 <!-- Noah Griffin
 CSCI434 
 This is my Text/Terms page-->
 <html>
-<head>
 <title>How to Play FAB</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <style>
-
+/* Header margins to give a clean flush look */
+header {
+  margin: -0.5%;
+  margin-top: -30px;
+  }
 /* Setting the margins for the body and adding a background color */
 body {
   background-color: #380000;
   background-image: url("Pictures/leather.png");
-  margin-left: 10%;
-  margin-right: 10%;
   font-family: sans-serif
   } 
 
+/* Header 1 */
 h1 {
   text-align: center;
   font-family: serif;
   font-weight: normal;
+  margin-top: 30px;
   color:RGB(206,209,50);
   text-transform: uppercase;
   border-bottom: 1px solid RGB(156,159,15);
   margin-top: 30px;
 }
-
+/* Header 2 */
 h2 {
+  margin-left: 5%;
+  margin-right: 5%;
   color: RGB(206,209,50);
   font-size: 20px;
   font-family: Amasis MT Pro;
   margin-top: 40px
 }
+/* Header 3 */
 h3 { text-align: center;   
   color: RGB(206,209,50);
   font-size: 24px;
   font-family: Amasis MT Pro;
   margin-top: 60px }
 
-p { color:RGB(206,209,200)}
+p { 
+  color:RGB(206,209,200);
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+/* Used to maximize the header photo */
+.p1 {
+  max-width: 100%;
+  text-align: center;
+  margin: 0%;}
+/* background/border over texture to provide better reading */
+section {
+    display: block;
+    border-radius: 15px;
+    background-color: RGBA(0,0,0,0.3);
+    width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
 
 /* setting the height of certian photos */
 .hght {height: 400px; width: auto} 
-	
+
+/* Embedded container is used to auto size my videos */
 .embed-container { 
 	position: relative; 
 	padding-bottom: 56.25%; 
@@ -56,79 +83,72 @@ p { color:RGB(206,209,200)}
 .embed-container object, 
 .embed-container embed { 
 	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
+	top: 5%; 
+	left: 5%; 
+	width: 90%; 
+	height: 90%;
 }
 
 /* Style for the navigation bar */
 .topnav {
-  margin-left: -10%;
-  margin-right: -10%;
-  position: relative;
-  background-color: #491122;
-  overflow: hidden;
-  text-align: center;
+  width: 100%;
+  margin: 0%;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  padding: 0;
+  float: left;
+  display:flex;
+  flex-direction:row;
+  background: linear-gradient(to top, #000000 0%, #990033 100%);
+ 
 }
 
 /* Style the links for the navigation bar */
 .topnav a {
-  color: #f2f2f2;
+  color: #fdffb5;
   text-align: center;
-  padding: 14px 5%;
-  text-decoration: none;
+  float: left;
+  order:1;
+  flex-grow:1;
+  padding: 12px 5%;
   font-size: 17px;
-  display: inline-block;
-  list-style-type: none;
 }
 
 /* Navigation bar hover color */
 .topnav a:hover {
-  background-color: #ad9e32;
-  color: black;
+  background: linear-gradient(to top, #000000 0%, #999966 100%);
+  color: #fdffb5;
 }
 
 /* Navigation bar active link */
 .topnav a.active {
-  background-color: #820909;
-  color: white;
+  color: #f2f2f2;
+  background: linear-gradient(to top, #000000 0%, #999966 100%);
 }
 
-.topnav-centered a {
-	float: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50%);
-	}
-.topnav-right {
-	float: right:
-}
-<source media="max-width 480px" {
-	.topnav a {
-		float: none;
-		display: block;
-		padding: 1px 1px;
-	}
-}
+
 </style>
+<body>
+<header>
+<!-- Cover photo for the header -->
+	  	<img srcset="Pictures/cover480.jpg 480W
+		Pictures/cover1200.jpg 1200W"
+		sizes="(max-width:600px) 480px, 1200px"
+		src="Pictures/cover1200.jpg" class="p1">
 
-</head>
 
 <!-- topnav is my navigation bar at the top-->
 <div class="topnav">
-<!--  <a href="index.html">Home</a> removing home link for now until I have an index page built-->
+  <a href="index.html">Home</a> 
+  <a href="photo.html">View Cards</a>
   <a class="active"  href="Howtoplay.html">Learn to Play</a>
   <a href="Videohub.html">Video Hub</a>
   <a href="Links.html">Links</a>
-  <a href="Links.html">Links</a>
-  <a href="Links.html">Links</a>
 </div>
-<body>
-
+</header>
 
 <h1>How to Play Flesh and Blood</h1>
+<section>
 <p>Flesh and Blood may seem hard to understand, but after you learn the rules the game is easy to learn.  
 Please read through each part of the game to get an idea of how the game is played.  
 At the bottom there is a YouTube video that will also teach you how to play and teach you terms such as arsenal and pitch.</p>
@@ -209,7 +229,8 @@ After the first turn both players draw until they both have 4 cards in their han
 	<img src="Pictures/attack.png" class="hght"> <img src="Pictures/defense.png" class="hght">
 	</h3>  <br>
 <!-- I have created an iframe to youtube to include a video within this page-->
-<h3>How to play video</h3>
+<h1>How to play video</h1>
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/416k-Rs8hgQ' frameborder='0' allowfullscreen></iframe></div>
+</section>
 </body>
 </html>
