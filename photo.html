@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>
+<!-- Noah Griffin
+CSCI434 
+This is my photos page-->
+
+<html lang="en">
+<head>
+<title>View Cards</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  /* Header margins to give a clean flush look */
+header {
+  margin: -0.5%;
+  margin-top: -30px;
+  }
+/* Setting the margins for the body and adding a background color */
+body {
+  background-color: #380000;
+  background-image: url("Pictures/leather.png");
+  font-family: sans-serif
+  } 
+
+/* Header 1 */
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  margin-top: 30px;
+  color:RGB(206,209,50);
+  text-transform: uppercase;
+  border-bottom: 1px solid RGB(156,159,15);
+  margin-top: 30px;
+}
+/* Header 2 */
+h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: RGB(206,209,50);
+  font-size: 20px;
+  font-family: Amasis MT Pro;
+  margin-top: 40px
+}
+/* Header 3 */
+h3 { text-align: center;   
+  color: RGB(206,209,50);
+  font-size: 24px;
+  font-family: Amasis MT Pro;
+  margin-top: 60px }
+
+p { 
+  color:RGB(206,209,200);
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+/* Used to maximize the header photo */
+.p1 {
+  max-width: 100%;
+  text-align: center;
+  margin: 0%;}
+/* background/border over texture to provide better reading */
+section {
+    display: block;
+    border-radius: 15px;
+    background-color: RGBA(0,0,0,0.3);
+    width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* setting the height of certian photos */
+.hght {height: 100px; 
+  width: auto;} 
+
+
+/* Style for the navigation bar */
+.topnav {
+  width: 100%;
+  margin: 0%;
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+  display:flex;
+  flex-direction:row;
+  background: linear-gradient(to top, #000000 0%, #990033 100%);
+ 
+}
+
+/* Style the links for the navigation bar */
+.topnav a {
+  color: #fdffb5;
+  text-align: center;
+  float: left;
+  order:1;
+  flex-grow:1;
+  padding: 12px 5%;
+  font-size: 17px;
+}
+
+/* Navigation bar hover color */
+.topnav a:hover {
+  background: linear-gradient(to top, #000000 0%, #999966 100%);
+  color: #fdffb5;
+}
+
+/* Navigation bar active link */
+.topnav a.active {
+  color: #f2f2f2;
+  background: linear-gradient(to top, #000000 0%, #999966 100%);
+}
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  white-space: nowrap;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: RGBA(0,0,0,0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+  </style>
+</head>
+<body>
+<header>
+<!-- Cover photo for the header -->
+	  	<img srcset="Pictures/cover480.jpg 480W
+		Pictures/cover1200.jpg 1200W"
+		sizes="(max-width:600px) 480px, 1200px"
+		src="Pictures/cover1200.jpg" class="p1">
+
+
+<!-- topnav is my navigation bar at the top-->
+<div class="topnav">
+  <a href="index.html">Home</a> 
+  <a class="active"  href="photo.html">View Cards</a>
+  <a href="Howtoplay.html">Learn to Play</a>
+  <a href="Videohub.html">Video Hub</a>
+  <a href="Links.html">Links</a>
+</div>
+</header>
+<br>
+<section>
+<h3>Characters</h3>
+<!-- My carousel -->
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="Pictures/Ira.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/bravo.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Pictures/dash.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/dori.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Pictures/lexi.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/prism.png" style="width:50%; height: auto;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<h3>Weapons</h3>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="Pictures/neb.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/vol.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Pictures/lum.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/thorn.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Pictures/sled.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/ray.png" style="width:50%; height: auto;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<h3>Armor</h3>
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="Pictures/Tunic.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/brave.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides3">
+    <img src="Pictures/ill.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/blade.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides3">
+    <img src="Pictures/new.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/helm.png" style="width:50%; height: auto;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<h3>Majestic Cards</h3>
+<div class="slideshow-container">
+  <div class="mySlides4">
+    <img src="Pictures/herald.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/spine.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides4">
+    <img src="Pictures/oct.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/bolting.png" style="width:50%; height: auto;">
+  </div>
+
+  <div class="mySlides4">
+    <img src="Pictures/lumina.png" style="width:50%; height: auto; margin-right: 10px;"><img src="Pictures/rune.png" style="width:50%; height: auto;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+</div>
+</section>
+
+<!-- JS for carousel, it is set up to have multiple carousels -->
+<script>
+var slideIndex = [1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
