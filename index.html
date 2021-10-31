@@ -9,6 +9,7 @@ This is my User design page-->
 <title>FABTCG Fan Page</title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- JS for the carousel -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -57,6 +58,7 @@ p {
   margin-left: 5%;
   margin-right: 5%;
   }
+  
 /* Used to maximize the header photo */
 .p1 {
   max-width: 100%;
@@ -75,24 +77,6 @@ section {
 .hght {height: 400px; 
   width: auto} 
 
-/* Embedded container is used to auto size my videos */
-.embed-container { 
-	position: relative; 
-	padding-bottom: 56.25%; 
-	height: 0; 
-	overflow: hidden; 
-	max-width: 100%; 
-} 
-	
-.embed-container iframe, 
-.embed-container object, 
-.embed-container embed { 
-	position: absolute; 
-	top: 5%; 
-	left: 5%; 
-	width: 90%; 
-	height: 90%;
-}
 
 /* Style for the navigation bar */
 .topnav {
@@ -129,6 +113,7 @@ section {
   color: #f2f2f2;
   background: linear-gradient(to top, #000000 0%, #999966 100%);
 }
+/*Maxing out the margins and adding a gradient to match the captions*/
 .carousel {
 background-image: linear-gradient(to top, RGBA(0,0,0,0.6), RGBA(0,0,0,0));
 z-index: 100;
@@ -141,6 +126,7 @@ padding:0%;}
     width: 80%;
     margin: auto;
 }
+/*Adding a gradient for captions for easier reading*/
 .carousel-caption {
 background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0));
 height:200px;
@@ -149,14 +135,10 @@ margin-left: -20%;
 margin-right: -20%;
 
 }
+/*More gradient added for when you hover over the caption*/
 .carousel-caption:hover {
 background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0.2));
 }
- 
- 
- 
- 
- 
 
   </style>
 </head>
@@ -179,7 +161,7 @@ background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0.2));
 </div>
 </header>
 <br>
-
+<!-- my carousel -->
 <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -195,7 +177,7 @@ background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0.2));
     <div class="carousel-inner" role="listbox">
 
       
-	 
+	 <!-- The first slide of the carousel, added links to all of the captions -->
 	  <div class="item active">
 	  <img srcset="Pictures/prism480.jpg 480W
 				  Pictures/prism1200.jpg 1200W"
@@ -214,7 +196,7 @@ background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0.2));
 	  <img srcset="Pictures/bravo480.jpg 480W
 				  Pictures/bravo1200.jpg 1200W"
 			sizes="(max-width:600px) 480px, 1200px"
-			src="Pictures/bravo1200.jpg">file:///C:/Users/macad/Desktop/Class%20Work/Week%205/index.html#myCarousel
+			src="Pictures/bravo1200.jpg">
 		<a href="Links.html">
         <div class="carousel-caption">
           <h3>The newest TCG on the market</h3>
