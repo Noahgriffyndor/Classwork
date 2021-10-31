@@ -1,94 +1,276 @@
+<!DOCTYPE html>
+<head>
 <!-- Noah Griffin
 CSCI434 
-Comments about title and style are below, putting too many breaks in code broke my style element-->
-<title>Ancient Aliens</title>  
-<style> body {  background-color: Rgb(200,150,120);margin-left: 50px; margin-right: 50px; text-align: center} 
-p { width: auto; max-width: 1200px; display: inline-block; text-align:left;}
-h1 { text-align: center; text-transform: uppercase; border-bottom: 3px solid Rgb(200,40,40); margin-top: 40px;} 
-h2 {color: Rgb(200,40,40);text-align: center;}   
-h3 { text-align: center; font-size: 28px; border-top: 1px solid Rgb(200,40,40); margin-top: 40px; margin-bottom: 5px}
-h4 { text-align: center; font-size: 20px; margin-top: 10px; margin-bottom: 5px}
-.hght {height: 300px; width: auto;} 
-a:link {color: blue; }
-a:visited {color: purple; }
-a:hover {color: white; background-color: black }
+This is my User design page-->
+
+<html lang="en">
+<head>
+<title>FABTCG Fan Page</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Header margins to give a clean flush look */
+header {
+  margin: -0.5%;
+  margin-top: -30px;
+  }
+/* Setting the margins for the body and adding a background color */
+body {
+  background-color: #380000;
+  background-image: url("Pictures/leather.png");
+  font-family: sans-serif
+  } 
+
+/* Header 1 */
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  margin-top: 30px;
+  color:RGB(206,209,50);
+  text-transform: uppercase;
+  border-bottom: 1px solid RGB(156,159,15);
+  margin-top: 30px;
+}
+/* Header 2 */
+h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: RGB(206,209,50);
+  font-size: 20px;
+  font-family: Amasis MT Pro;
+  margin-top: 40px
+}
+/* Header 3 */
+h3 { text-align: center;   
+  color: RGB(206,209,50);
+  font-size: 24px;
+  font-family: Amasis MT Pro;
+  margin-top: 60px }
+
+p { 
+  color:RGB(206,209,200);
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+/* Used to maximize the header photo */
+.p1 {
+  max-width: 100%;
+  text-align: center;
+  margin: 0%;}
+/* background/border over texture to provide better reading */
+section {
+    display: block;
+    border-radius: 0px;
+    background-color: RGBA(0,0,0,0.8);
+    width: 100%;
+
+}
+
+/* setting the height of certian photos */
+.hght {height: 400px; 
+  width: auto} 
+
+/* Embedded container is used to auto size my videos */
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+	
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 5%; 
+	left: 5%; 
+	width: 90%; 
+	height: 90%;
+}
 
 /* Style for the navigation bar */
 .topnav {
-  margin-left: -10%;
-  margin-right: -10%;
-  background-color: #491122;
-  overflow: hidden;
+  width: 100%;
+  margin: 0%;
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+  display:flex;
+  flex-direction:row;
+  background: linear-gradient(to top, #000000 0%, #990033 100%);
+ 
 }
 
 /* Style the links for the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
+  color: #fdffb5;
   text-align: center;
-  padding: 14px 40px;
-  text-decoration: none;
+  float: left;
+  order:1;
+  flex-grow:1;
+  padding: 12px 5%;
   font-size: 17px;
 }
 
 /* Navigation bar hover color */
 .topnav a:hover {
-  background-color: #ad9e32;
-  color: black;
+  background: linear-gradient(to top, #000000 0%, #999966 100%);
+  color: #fdffb5;
 }
 
 /* Navigation bar active link */
 .topnav a.active {
-  background-color: #820909;
-  color: white;
+  color: #f2f2f2;
+  background: linear-gradient(to top, #000000 0%, #999966 100%);
 }
-</style>
-<!-- Title is "Ancient Aliens
-Style start and setting the background color to dark peach color. Also aligned the page to the center.
-P I wanted centered margins but text aligned left. So I centered all body content, added max width, then aligned text left.
-h1 is centered, all caps, has a border below it, and added space from the top margin. 
-h2 is red and centered. 
-h3 is dividing the mars theme from the information about myself, will probably make these two different pages at some point 
-.hght is for making photo heights flush for when they are next to each other 
-a: setting up the colors for link color, visited color, and hover color -->
+.carousel {
+background-image: linear-gradient(to top, RGBA(0,0,0,0.6), RGBA(0,0,0,0));
+z-index: 100;
+margin-left: -16.5%;
+margin-right: -16.5%;
+padding:0%;}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+
+    width: 80%;
+    margin: auto;
+}
+.carousel-caption {
+background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0));
+height:200px;
+margin-bottom: -20px;
+margin-left: -20%;
+margin-right: -20%;
+
+}
+.carousel-caption:hover {
+background-image: linear-gradient(to top, RGBA(0,0,0,1), RGBA(0,0,0,0.2));
+}
+ 
+ 
+ 
+ 
+ 
+
+  </style>
+</head>
+<body>
+<header>
+<!-- Cover photo for the header -->
+	  	<img srcset="Pictures/cover480.jpg 480W
+		Pictures/cover1200.jpg 1200W"
+		sizes="(max-width:600px) 480px, 1200px"
+		src="Pictures/cover1200.jpg" class="p1">
+
+
+<!-- topnav is my navigation bar at the top-->
 <div class="topnav">
   <a class="active"  href="index.html">Home</a> 
+  <a href="photo.html">View Cards</a>
   <a href="Howtoplay.html">Learn to Play</a>
   <a href="Videohub.html">Video Hub</a>
   <a href="Links.html">Links</a>
 </div>
-<H1><img src="Mars.jpg"><br>Aliens on Mars!!</H1> 
-<!-- Header 1 includes a picture, line break, and the words “Aliens on Mars!!” -->
-<h2>Ancient Cilivations</h2>
-<!-- Header 2 -->
-<p>The pyramids on Mars are proof that there was ancient civilations.  
-The martians that built pyramids on Mars are the same ones who built the pyramids in Egypt.  
-Why Egypt you ask?  Obviously Egypt holds the same climate as Mars, making Egypt the most comfortable environment for the Martians.</p>
-<!-- Here is just regular text underneath Header 2.  A line break is included in between the words for easier reading -->
+</header>
 <br>
 
-<img src="Pyramid.jfif" class="hght"> <img src="Pyramid2.jfif" class="hght">
-<!-- 2 pictures under the text of Header 2, recalled the class "hght" -->
-<h3>A bit about my self</h3>
-<!-- Header 3 to divide from the mars theme -->
-<p>My name is Noah Griffin and welcome to my page.  
-I am from Arkansas and I joined the Air force 7 years ago and I plan on completing 20 years of service.  
-I am well versed in VBA coding in MS Access and I just got my first commission to build a database for a company last week.  
-I also just got orders to Japan and I am super excited to leave Oklahoma, no offense to any Okies in the class.</p>
-<h4>My hobbies</h4>
-<p>My hobbies include working on cars, coding, and 3D printing.  
-I was stationed in England for my first base, and what I brought back was a 1992 Rover Mini Cooper(seen below).  
-Unfortunately I could not afford repair the rust so I had to sell it.  
-Now that I am going to Japan, I plan on getting another project car, a 
-<a href="https://ltmotorwerks.com/products/full-rocket-bunny-240sx-s14-v2-boss-conversion-aero-kit">modded</a> 
-Nissan 240sx.  I am very excited to start this next chapter in my life and I want to expand on my hobbies while I'm in Japan.
-A site I frequently visit for VBA and SQL questions is 
-<a href="https://stackoverflow.com/questions">Stack Overflow.</a>
-For 3D printing I recommend downloading models from
-<a href="https://www.thingiverse.com/">Thingiverse.</a>
-</p>
-<!-- I embedded 3 links with in my text -->
-<br>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-<img src="Mini.jpg" class="hght"> <img src="240sx.jpg" class="hght">
-<!-- 2 photos -->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      
+	 
+	  <div class="item active">
+	  <img srcset="Pictures/prism480.jpg 480W
+				  Pictures/prism1200.jpg 1200W"
+			sizes="(max-width:600px) 480px, 1200px"
+			src="Pictures/prism1200.jpg">
+		<a href="https://fabtcg.com/">
+        <div class="carousel-caption">
+          <h3>Welcome to Flesh and Blood</h3>
+          <p>Click here to visit the official website</p>
+        </div></a>
+	  </div>
+	  
+	  
+
+      <div class="item">
+	  <img srcset="Pictures/bravo480.jpg 480W
+				  Pictures/bravo1200.jpg 1200W"
+			sizes="(max-width:600px) 480px, 1200px"
+			src="Pictures/bravo1200.jpg">file:///C:/Users/macad/Desktop/Class%20Work/Week%205/index.html#myCarousel
+		<a href="Links.html">
+        <div class="carousel-caption">
+          <h3>The newest TCG on the market</h3>
+          <p>Take look at these top websites to learn more</p>
+        </div></a>
+      </div>
+    
+      <div class="item">
+	  <img srcset="Pictures/lexi480.jpg 480W
+				  Pictures/lexi1200.jpg 1200W"
+			sizes="(max-width:600px) 480px, 1200px"
+			src="Pictures/lexi1200.jpg">
+		<a href="Howtoplay.html">
+		<div class="carousel-caption">
+          <h3>How to Play</h3>
+          <p>Learn to play by following my guide</p>
+        </div></a>
+      </div>
+
+      <div class="item">
+	  <img srcset="Pictures/boltyn480.jpg 480W
+				  Pictures/boltyn1200.jpg 1200W"
+			sizes="(max-width:600px) 480px, 1200px"
+			src="Pictures/boltyn1200.jpg">
+		<a href="Videohub.html">
+		<div class="carousel-caption">
+          <h3>Watch the Heroes</h3>
+          <p>Watch YouTube videos of the creators playing</p>
+        </div></a>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<section>
+<br
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>This is a fan made website</h2>
+<p>There is no affilation with the official FABTCG website or with Legend Story Studios <br><br>
+This website was made by Noah Griffin</p>
+</section>
+
+</body>
+</html>
